@@ -7,7 +7,7 @@ const NewsItem = (props) => {
 
   return (
     <li className="news-item-container">
-      <img src={newsItem?.urlToImage} alt="" />
+      <img src={newsItem?.urlToImage} alt="img" />
       <div className="news-details">
         <h3 className="title">{newsItem?.title}Title</h3>
         <p className="description">{newsItem?.description}</p>

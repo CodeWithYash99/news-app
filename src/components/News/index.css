@@ -21,6 +21,12 @@
     width: 100%;
 }
 
+.title {
+    font-family: 'Magneto';
+    font-size: 30px;
+    font-weight: 800;
+}
+
 .input-container input {
     color: black;
     font-family: 'Courier New', Courier, monospace;
@@ -58,3 +64,10 @@
     width: 100%;
     list-style: none;
 }
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
