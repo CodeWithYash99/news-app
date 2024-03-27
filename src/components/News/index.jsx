@@ -28,12 +28,14 @@ const News = () => {
   }
 
   function handleSearch() {
-    fetchNewsData(search);
+    if (search !== "") {
+      fetchNewsData(search);
+    }
   }
 
   return (
     <div className="news-container">
-      <h1 className="title">Global News</h1>
+      <h1 className="page-title">Global News</h1>
       <div className="input-container">
         <input
           type="text"

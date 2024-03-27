@@ -21,10 +21,11 @@
     width: 100%;
 }
 
-.title {
+.page-title {
+    color: #4a9a1c;
     font-family: 'Magneto';
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 36px;
+    font-weight: 900;
 }
 
 .input-container input {
