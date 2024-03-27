@@ -1,36 +1,212 @@
-.news-container {
+@media screen and (max-width: 576px) {
+  .news-container {
+    background: #acdf8e;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 40px;
+    padding: 40px 30px;
     width: 90%;
     min-height: 90vh;
     border-radius: 8px;
     box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
-    25px 0 20px -20px rgba(0, 0, 0, 0.45),
-    0px 25px 20px -20px rgba(0, 0, 0, 0.45),
-    -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+      25px 0 20px -20px rgba(0, 0, 0, 0.45),
+      0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+      -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  }
+
+  .page-title {
+    color: #fc062f;
+    font-family: "Magneto";
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .input-container input {
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 70%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+
+  .input-container button {
+    background-color: rgb(75, 244, 247);
+    color: #ffffff;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .loader-news-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+  }
+
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
 }
 
-.input-container {
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .news-container {
+    background: #455f36;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    width: 90%;
+    min-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+      25px 0 20px -20px rgba(0, 0, 0, 0.45),
+      0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+      -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  }
+
+  .page-title {
+    color: #c91634;
+    font-family: "Magneto";
+    font-size: 38px;
+    font-weight: 900;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .input-container input {
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+
+  .input-container button {
+    background-color: rgb(75, 244, 247);
+    color: #ffffff;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 700;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .loader-news-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+  }
+
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .news-container {
+    background: #a0bd90;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    width: 90%;
+    min-height: 94vh;
+    border-radius: 8px;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+      25px 0 20px -20px rgba(0, 0, 0, 0.45),
+      0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+      -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  }
+
+  .page-title {
+    color: #4a9a1c;
+    font-family: "Magneto";
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .input-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     width: 100%;
-}
+  }
 
-.page-title {
-    color: #4a9a1c;
-    font-family: 'Magneto';
-    font-size: 36px;
-    font-weight: 900;
-}
-
-.input-container input {
+  .input-container input {
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 20px;
     font-weight: 700;
     padding-left: 20px;
@@ -39,13 +215,13 @@
     border-radius: 8px;
     border: none;
     outline: none;
-}
+  }
 
-.input-container button {
+  .input-container button {
     background-color: darkturquoise;
     color: #ffffff;
     text-align: center;
-    font-family: 'Arial';
+    font-family: "Arial";
     font-size: 20px;
     font-weight: 700;
     width: 150px;
@@ -54,9 +230,25 @@
     border: none;
     outline: none;
     cursor: pointer;
-}
+  }
 
-.news-items-container {
+  .loader-news-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70vh;
+  }
+
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-items-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -64,11 +256,5 @@
     padding: 0;
     width: 100%;
     list-style: none;
-}
-
-.loading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
+}

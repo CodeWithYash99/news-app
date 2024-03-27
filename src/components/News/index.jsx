@@ -47,24 +47,26 @@ const News = () => {
         <button onClick={handleSearch}>Search</button>
       </div>
 
-      {loader ? (
-        <Loading
-          className="loading"
-          height="80"
-          width="80"
-          radius="9"
-          color="skyblue"
-          ariaLabel="loading"
-          wrapperStyle
-          wrapperClass
-        />
-      ) : (
-        <ul className="news-items-container">
-          {newsData?.map((eachItem, index) => (
-            <NewsItem newsItem={eachItem} key={index} />
-          ))}
-        </ul>
-      )}
+      <div className="loader-news-items-container">
+        {loader ? (
+          <Loading
+            className="loading"
+            height="80"
+            width="80"
+            radius="9"
+            color="skyblue"
+            ariaLabel="loading"
+            wrapperStyle
+            wrapperClass
+          />
+        ) : (
+          <ul className="news-items-container">
+            {newsData?.map((eachItem, index) => (
+              <NewsItem newsItem={eachItem} key={index} />
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 };
